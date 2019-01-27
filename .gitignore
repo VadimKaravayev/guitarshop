@@ -1,0 +1,22 @@
+# Try to use different patterns in .gitignore file #
+
+*.class
+*.dll
+*.exe
+
+*.iml
+
+.idea/
+target/
+webshop/target/
+
+MyTrainingClass.java
+Test.java
+
+file.ser
+test.ser
+file.ser.gz
+MyWorkShop.java
+log4j.properties
+bigfile.txt
+bytefile.txt

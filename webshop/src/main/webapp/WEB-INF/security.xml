@@ -1,0 +1,11 @@
+<security>
+    <constraint>
+        <url-pattern>/admin</url-pattern>
+        <role>admin</role>
+    </constraint>
+    <constraint>
+        <url-pattern>/order</url-pattern>
+        <role>admin</role>
+        <role>user</role>
+    </constraint>
+</security>

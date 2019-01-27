@@ -1,0 +1,206 @@
+.error {
+    color: red;
+    font-size: 80%;
+    font-style: italic;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.avatar form {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.avatar form input[type="submit"]{
+    border: none;
+    padding: 10px 40px;
+    font-size: 14px;
+    outline: none;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #1accfd;
+    color: #fff;
+    margin: 7px 0;
+}
+
+.avatar form input[type="submit"]:hover {
+    background: #000;
+}
+
+.avatar form input[type=email], input[type=password] {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 3px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#filter-button {
+    background: url(../../images/search.png) no-repeat 13px 11px #1accfd;
+    width: 44px;
+    height: 39px;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+#captcha-input {
+    width: 28%;
+    border: 1px solid;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+<!-- price range slider -->
+#rangeBox{ /* carry complete  range box*/
+    width:300px;
+    height:100px;
+
+    }
+#sliderBox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+
+}
+#slider0to50{
+
+}
+#slider51to100{
+
+}
+#inputRange{
+
+}
+#inputRange::after{
+content:"";
+clear:both;
+display:block
+}
+#inputRange #min{
+ width:40%;
+float:left;
+ }
+#inputRange #max{
+ width:40%;
+float:right;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /*border: 1px solid #000000;*/
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #FF5722;
+  cursor: pointer;
+  margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #FF5722; /* Add cool effects to your sliders! */
+}
+
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #1accfd;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+/* custom-select sorting*/
+.custom-select {
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #757575;
+    padding: 11px 10px 10px 10px;
+    width: 81%;
+    margin-bottom: 20px;
+
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #1accfd;
+}
+
+
+/* pagination styling*/
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #1accfd;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Add to cart button on products.jsp */
+
+.addToCart {
+    background: #1accfd;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 13px;
+    outline: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+.addToCart:hover {
+    background: #000;
+}
